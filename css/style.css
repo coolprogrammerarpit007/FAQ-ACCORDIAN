@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* CSS Font Guide */
+
+/* Weights: 400, 600, 700 */
+/* Font size (paragraphs): 16px */
+
+/* ***************************** */
+
+/* ******************************* */
+/* ******************************* */
+
+/* COLOR THEME */
+
+/* White: hsl(0, 0%, 100%) */
+/* - Light pink: hsl(275, 100%, 97%) */
+/* - Grayish purple: hsl(292, 16%, 49%) */
+/* - Dark purple: hsl(292, 42%, 14%) */
+
+/* ********************************* */
+
+/* 
+Design of the faq project starts from here
+ */
+
+.header {
+  padding: 10rem;
+  background: url(../assets/images/background-pattern-desktop.svg);
+  position: relative;
+}
+
+.main {
+  background-color: hsl(275, 100%, 97%);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  position: absolute;
+  top: 5rem;
+  padding: 2rem;
+  border: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  width: 40%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  border-radius: 1rem;
+  height: auto;
+  z-index: 10;
+  box-shadow: 5px 5px hsl(275, 100%, 97%);
+}
+
+.container img {
+  cursor: pointer;
+}
+
+.project-top {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.project-top .project-title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: hsl(292, 42%, 14%);
+}
+
+.project-title #letter {
+  font-size: 3rem;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question h2 {
+  color: hsl(292, 42%, 14%);
+}
+.answer p {
+  color: hsl(292, 16%, 49%);
+  font-size: 1.5rem;
+  word-spacing: 0.4rem;
+}
+
+.hide {
+  display: none;
+}
+
+/* Adding the media query to the page */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 3rem;
+    width: 95%;
+    height: auto;
+  }
+}
